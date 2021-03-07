@@ -12,11 +12,9 @@ def detect_intent_texts(project_id, session_id, text, language_code):
     session = session_client.session_path(project_id, session_id)
 
     if text:
-        text_input = dialogflow.types.TextInput(
-            text=text, language_code=language_code)
+        text_input = dialogflow.types.TextInput(text=text, language_code=language_code)
         query_input = dialogflow.types.QueryInput(text=text_input)
-        response = session_client.detect_intent(
-            session=session, query_input=query_input)
+        response = session_client.detect_intent(session=session, query_input=query_input)
         return response.query_result.fulfillment_text
 
 @app.route('/')
@@ -43,11 +41,13 @@ def dialogflow_webhook():
             "fulfillmentText": "sí se pudo",
         }
     return jsonify(reply);
+
+
 @app.route('/send_message', methods=['POST'])
 def send_message():
-    return jsonify("hello");
-    # message = request.form['message']
-    # project_id = os.getenv('DIALOGFLOW_PROJECT_ID')
-    # fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
-    # response_text = { "message":  fulfillment_text }
-    # return jsonify(response_text)
+    # return jsonify("hello");
+    message = request.form['message']
+    project_id = os.getenv('DIALOGFLOW_PROJECT_ID')
+    fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
+    response_text = { "message":  fulfillment_text }
+    return jsonify(response_text)
