@@ -45,7 +45,6 @@ def dialogflow_webhook():
 
 @app.route('/send_message', methods=['POST'])
 def send_message():
-    # return jsonify("hello");
     message = request.form['message']
     project_id = os.getenv('DIALOGFLOW_PROJECT_ID')
     fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
