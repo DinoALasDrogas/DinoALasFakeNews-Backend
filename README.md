@@ -6,6 +6,7 @@ Back-end para las Fake News
 ## Links importantes
 
 - [Trello](https://trello.com/b/gw72hzyx/dino-a-las-fake-news)
+- [Tutorial Conectar Chatbot](https://medium.com/zenofai/creating-chatbot-using-python-flask-d6947d8ef805)
 
 ---
 
