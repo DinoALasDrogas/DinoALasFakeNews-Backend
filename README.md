@@ -3,6 +3,21 @@ Back-end para las Fake News
 
 ---
 
+## Links importantes
+
+- [Trello](https://trello.com/b/gw72hzyx/dino-a-las-fake-news)
+
+---
+
+## Contribuidores
+| Nombre | No sé |
+| ------------- | ------------- |
+| Ale | Personita |
+| Adrian | Personita |
+| Mago | Personita |
+
+---
+
 ## Instrucciones para correr aplicación
 
 ### __Variables de ambiente__
