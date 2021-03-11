@@ -9,15 +9,6 @@ Back-end para las Fake News
 
 ---
 
-## Contribuidores
-| Nombre | No sé |
-| ------------- | ------------- |
-| Ale | Personita |
-| Adrian | Personita |
-| Mago | Personita |
-
----
-
 ## Instrucciones para correr aplicación
 
 ### __Variables de ambiente__
@@ -72,3 +63,12 @@ $ ngrok http 5000
 En caso de que tengas el servidor corriendo en otro puerto, cambia el 5000 por dicho puerto.
 
 Al correr ngrok, te dará dos links, uno `http` y otro `https`. Copia y pega este link en el campo de URL dentro de Fullfilment.
+
+---
+
+## Contribuidores
+| Nombre | No sé |
+| ------------- | ------------- |
+| Ale | Personita |
+| Adrian | Personita |
+| Mago | Personita |
